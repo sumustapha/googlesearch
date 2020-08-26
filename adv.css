@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+header{
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.adhead{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background: #e5e5e5;
+    height: 60px;
+}
+
+.advtxt{
+    display: block;
+    margin-top: 30px;
+    margin-left: 40px;
+    height: 50px;
+}
+
+.advtxt h1{
+    font-size: large;
+    color: #d93025;
+    font-weight: 500;
+}
+
+.flexcontainer{
+    display:flex;
+    padding: 3em 3em;
+    flex-flow: column wrap;
+    width: 100%;
+}
+form{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+.row1, .row2 ,.row3, .row4,.row5{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    flex-basis: 10%;
+    float: left;
+    height: 60px;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+    margin:0;
+    padding: 0;
+}
+
+input[type = "text"]{
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    height: 25px;
+    width: 554px;
+    padding: 1px 8px;
+    cursor: pointer;
+}
+
+input[type = "text"]:focus{
+    border-radius: 1px;
+    border: 1px solid rgb(44, 44, 230);
+    height: 25px;
+    width: 554px;
+    padding: 1px 8px;
+    cursor: pointer;
+}
+p span{
+    font-style: italic;
+}
+.row1 .findpages{
+    display:flex;
+    flex:1;
+}
+
+.row1 .space{
+    display: flex;
+    flex:2;
+}
+
+.row1 .description{
+    display: flex;
+    flex:2;
+    color: #777;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.row2 .atw{
+    display:flex;
+    flex:1;
+    align-self: center;
+}
+
+.row2 .atwl{
+    display: flex;
+    flex:2;
+}
+
+.row2 .atwdesc{
+    display:flex;
+    flex:2;
+    color: #666;
+    font-size: 10px;
+    padding-left: 10px;
+    align-self: center;
+}
+
+.row3 .tewop{
+    display:flex;
+    flex:1;
+    align-self: center;
+}
+
+.row3 .tewopl{
+    display: flex;
+    flex:2;
+}
+
+.row3 .tewopdesc{
+    display:flex;
+    flex:2;
+    color: #666;
+    font-size: 10px;
+    padding-left: 10px;
+    align-self: center;
+}
+
+.row4 .aotw{
+    display:flex;
+    flex:1;
+    align-self: center;
+}
+
+.row4 .aotwl{
+    display: flex;
+    flex:2;
+}
+.row4 .aotwdesc{
+    display:flex;
+    flex:2;
+    color: #666;
+    font-size: 10px;
+    padding-left: 10px;
+    align-self: center;
+}
+
+.row5 .notw{
+    display:flex;
+    flex:1;
+    align-self: center;
+}
+
+.row5 .notwl{
+    display: flex;
+    flex:2;
+}
+.row5 .notwdesc{
+    display:flex;
+    flex:2;
+    color: #666;
+    font-size: 10px;
+    padding-left: 10px;
+    align-self: center;
+}
+
+.btn input{
+    display:block;
+    margin:auto;
+    border: 1px solid #f2f2f2;
+    height: 50px;
+    width: 100px;
+    color:  whitesmoke;
+    background-color: rgb(34, 112, 230);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.btn input:Hover{
+    border: 2px solid rgb(93, 91, 233);
+    font-weight: bold;
+}
+
+@media screen and (max-width:1056px){
+    .row1 .description{
+        flex:1;
+        display: none;
+        border: 1px solid red;
+    }
+    .row2 .atwdesc, .row3 .tewopdesc, .row4 .aotwdesc, .row5 .notwdesc{
+        display:none;
+    }
+    .row1 div, .row2 div, .row3 div, .row4 div, .row5 div{
+        flex:1;
+    }
+    input[type="text"]{
+        width:72px;
+    }
+    input[type="text"]:focus{
+        width:72px;
+    }
+
+}
+
+@media screen and (max-width:600px)
+{
+    .adhead img, .advtxt{
+        align-content: center;
+        text-align: center;
+        height:5%;
+        margin: 0;
+        padding: 3px 0;
+    }
+    .row1, .row2, .row3, .row4, .row5{
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+    .row1 .description, .row1 .space{
+        display: none;
+    }
+    input[type="text"], input[type="text"]:focus{
+        width: 180px;
+    }
+}

@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <title>Advance Search</title>
+</head>
+<body>
+    <header>
+        <div class="adhead">
+            <a href="index.html">
+                <img src="googlelogo.png" alt="googlelogo"
+                width = "92" height ="33"> 
+            </a>         
+        </div>
+        <div class="advtxt">
+            <h1>Advanced Search</h1>
+        </div>
+    </header>
+    <main>
+        <div class="flexcontainer">
+        <form action = "https://www.google.com/search">
+            <div class="row1">
+                <div class="findpages"><h1>Find pages with...</h1></div>
+                <div class="space"></div>
+                <div class="description"><h3>To do this in the search box.</h3></div>
+            </div>
+
+            <div class="row2">
+                <div class="atw">
+                    <label for="atw">all these words:</label>    
+                </div>
+                <div class="atwl"><input type="text" class="atw" id="atw" name = "as_q"></div>
+                <div class="atwdesc">
+                    <p> Type the important words:
+                        <span>tri-colour rat terrier</span>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row3">
+                <div class="tewop">
+                    <label for="tewop"> this exact word or phrase:</label>
+                </div>
+                <div class="tewopl"><input type="text" class="tewop" id="tewop" name="as_epq"></div>
+                <div class="tewopdesc">
+                    <p>  Put exact words in quotes:  
+                        <span>"rat terrier"</span>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row4">
+                <div class="aotw">
+                    <label for="aotw"> any of these words:</label>
+                </div>
+                <div class="aotwl"><input type="text" class="aotw" id="aotw" name="as_oq"></div>
+                <div class="aotwdesc">
+                    <p>  Type OR between all the words you want:
+                        <span> miniature OR standard</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row5">   
+                <div class="notw">
+                    <label for="notw"> none of these words:</label>
+                </div>
+                <div class="notwl"><input type="text" class="notw" id="notw" name="as_eq"></div>
+                <div class="notwdesc">
+                    <p>  Put a minus sign just before words that you don't want:
+                        <span> -rodent, -"Jack Russell"</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+                <input type="submit" value = "Search">
+        </div>
+        </form>
+    </main>
+</body>
+</html>
